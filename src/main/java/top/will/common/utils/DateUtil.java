@@ -38,7 +38,7 @@ public class DateUtil {
      * 获取某年某月最开始时间点
      * @author panhao
      */
-    public static Calendar getYearFirstTime(Integer year, Integer month) {
+    public static Calendar getYearMonthFirstTime(Integer year, Integer month) {
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.YEAR, year);
         calendar.set(Calendar.MONTH, month);
@@ -54,7 +54,7 @@ public class DateUtil {
      * 获取某年某月最后的时间点
      * @author panhao
      */
-    public static Calendar getYearLastTime(Integer year, Integer month) {
+    public static Calendar getYearMonthLastTime(Integer year, Integer month) {
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.YEAR, year);
         calendar.set(Calendar.MONTH, month);
@@ -64,6 +64,12 @@ public class DateUtil {
         calendar.set(Calendar.SECOND, 59);
         calendar.set(Calendar.MILLISECOND, 999);
         return calendar;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(Calendar.getInstance().get(Calendar.YEAR));
+        System.out.println(Calendar.getInstance().get(Calendar.MONTH));
+        System.out.println(Calendar.getInstance().getTime());
     }
 
 }
