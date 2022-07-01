@@ -1,0 +1,6 @@
+server:
+  port: 8582
+
+spring:
+  application:
+    name: Will.s-Magic-Box
