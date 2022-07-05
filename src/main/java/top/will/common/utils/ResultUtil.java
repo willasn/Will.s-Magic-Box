@@ -20,6 +20,12 @@ public class ResultUtil {
         return res;
     }
 
+    public static <T> CommonResult<T> fail(IMessage msg, T t) {
+        CommonResult<T> res = new CommonResult<>(false, msg.getMessage(), t);
+        res.setCode(msg.getCode());
+        return res;
+    }
+
     public static CommonResult<String> fail(String code, String msg) {
         CommonResult<String> res = new CommonResult<>(false, msg, null);
         res.setCode(code);

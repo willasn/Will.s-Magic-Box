@@ -1,4 +1,4 @@
-package top.will.ws_rabbitmq_demo.controller;
+package top.will.websocket_rabbitmq_demo.controller;
 
 import com.alibaba.fastjson.JSON;
 import io.swagger.annotations.Api;
@@ -6,8 +6,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
-import top.will.ws_rabbitmq_demo.config.RabbitmqConfig;
-import top.will.ws_rabbitmq_demo.pojo.AlertDust;
+import top.will.websocket_rabbitmq_demo.config.RabbitmqConfig;
+import top.will.websocket_rabbitmq_demo.pojo.AlertDust;
 
 import javax.websocket.*;
 import javax.websocket.server.PathParam;
@@ -42,7 +42,7 @@ public class WebSocketDemo {
     public void onOpen(Session session, @PathParam("sid") String sid) {
         this.session = session;
         webSocketSet.add(this);     //加入set中
-        if (StringUtils.isEmpty(sid)) {
+        if (StringUtils.hasText(sid)) {
             Throwable throwable = new Throwable("sid 参数错误");
             onError(session,throwable);
         }

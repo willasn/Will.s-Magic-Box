@@ -1,12 +1,12 @@
-package top.will.ws_rabbitmq_demo.listener;
+package top.will.websocket_rabbitmq_demo.listener;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
-import top.will.ws_rabbitmq_demo.config.RabbitmqConfig;
-import top.will.ws_rabbitmq_demo.pojo.AlertDust;
-import top.will.ws_rabbitmq_demo.service.DeviceApiService;
+import top.will.websocket_rabbitmq_demo.config.RabbitmqConfig;
+import top.will.websocket_rabbitmq_demo.pojo.AlertDust;
+import top.will.websocket_rabbitmq_demo.service.DeviceApiService;
 
 /**
  * @author panhao

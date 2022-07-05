@@ -1,4 +1,4 @@
-package top.will.ws_rabbitmq_demo.pojo;
+package top.will.websocket_rabbitmq_demo.pojo;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;

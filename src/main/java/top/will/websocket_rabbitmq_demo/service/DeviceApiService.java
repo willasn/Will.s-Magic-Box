@@ -1,6 +1,6 @@
-package top.will.ws_rabbitmq_demo.service;
+package top.will.websocket_rabbitmq_demo.service;
 
-import top.will.ws_rabbitmq_demo.pojo.AlertDust;
+import top.will.websocket_rabbitmq_demo.pojo.AlertDust;
 
 /**
  * @author panhao

@@ -4,3 +4,18 @@ server:
 spring:
   application:
     name: Will.s-Magic-Box
+  main:
+    allow-bean-definition-overriding: true
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    dynamic:
+      primary: db1
+      datasource:
+        db1:
+          driver-class-name: org.postgresql.Driver
+          url: jdbc:postgresql://117.78.33.195:5432/wisdom_v3_test?useUnicode=true&characterEncoding=utf8
+          username: root
+          password: njat@1103
+    druid:
+      initial-size: 1

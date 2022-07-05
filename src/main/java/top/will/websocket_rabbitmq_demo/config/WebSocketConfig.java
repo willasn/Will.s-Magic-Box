@@ -1,4 +1,4 @@
-package top.will.ws_rabbitmq_demo.config;
+package top.will.websocket_rabbitmq_demo.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

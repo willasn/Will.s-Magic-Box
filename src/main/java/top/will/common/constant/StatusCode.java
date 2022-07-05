@@ -9,7 +9,7 @@ import com.power.common.interfaces.IMessage;
 public enum StatusCode implements IMessage {
 
     /**
-     *
+     * 系统全局错误枚举
      */
     SUCCESS("0000", "成功"),
     PARAM_EMPTY("1001", "参数为空"),
@@ -37,7 +37,21 @@ public enum StatusCode implements IMessage {
     UNLOAD_AERIAL_VIEW("1023", "未上传鸟瞰图"),
     DRIVER_ALREADY_BIND("1024", "该特种人员已绑定其他设备"),
     IDCARD_ERROR_MSG("1025", "身份证号码输入有误"),
-    UNKNOWN_ERROR("9999", "系统繁忙，请稍后再试....");
+    UNKNOWN_ERROR("9999", "系统繁忙，请稍后再试...."),
+
+
+    /**
+     * 1xxx 业务全局错误  <BR/>
+     * 2xxx-6xxx 个人模块错误 <BR/>
+     * 7xxx 系统程序内部错误 <BR/>
+     * 8xxx 三方API错误 <BR/>
+     * 9xxx 其他错误 <BR/>
+     * 0000 成功 <BR/>
+     * 9999 默认错误,未知错误 <BR/>
+     * <BR/>
+     */
+
+    GAODE_API_ADCODE_UNAVAILABLE("8001","高德地址反编码API,服务不可用~~~");
 
     private final String code;
     private final String message;

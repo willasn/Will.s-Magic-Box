@@ -1,8 +1,8 @@
-package top.will.ws_rabbitmq_demo.mapper;
+package top.will.websocket_rabbitmq_demo.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
-import top.will.ws_rabbitmq_demo.pojo.AlertDust;
+import top.will.websocket_rabbitmq_demo.pojo.AlertDust;
 
 /**
  * @author panhao

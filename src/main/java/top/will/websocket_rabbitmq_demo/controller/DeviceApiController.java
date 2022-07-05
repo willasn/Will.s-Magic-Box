@@ -1,4 +1,4 @@
-package top.will.ws_rabbitmq_demo.controller;
+package top.will.websocket_rabbitmq_demo.controller;
 
 import com.power.common.constants.BaseErrorCode;
 import com.power.common.model.CommonResult;
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import top.will.ws_rabbitmq_demo.config.RabbitmqConfig;
-import top.will.ws_rabbitmq_demo.pojo.AlertDust;
+import top.will.websocket_rabbitmq_demo.config.RabbitmqConfig;
+import top.will.websocket_rabbitmq_demo.pojo.AlertDust;
 
 /**
  * @author panhao
